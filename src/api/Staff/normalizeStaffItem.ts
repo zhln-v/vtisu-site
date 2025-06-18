@@ -2,7 +2,7 @@ import type { StaffItem } from "../../types/paginationResponse";
 
 export const normalizeStaffItem = (item: any): StaffItem => ({
     slug: item.slug,
-    fullName: item.title,
+    title: item.title,
     photo: item.images?.[0]?.url ?? "",
     position: item.position,
     disciplines: item.courses

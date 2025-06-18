@@ -31,16 +31,16 @@ export const mockMenu: menuItemType[] = [
     },
     {
         title: "Образование",
-        href: "/education",
+        href: "/education/program/bachelor",
         children: [
-            { title: "Направления подготовки", href: "/education/programs" },
+            // { title: "Направления подготовки", href: "/education/programs" },
             { title: "Бакалавриат", href: "/education/program/bachelor" },
             { title: "Магистратура", href: "/education/program/master" },
         ],
     },
     {
         title: "Сотрудники",
-        href: "/staff",
+        href: "/staff/teachers",
         children: [
             { title: "Преподаватели кафедры", href: "/staff/teachers" },
             { title: "Преподаватели-работодатели", href: "/staff/employers" },

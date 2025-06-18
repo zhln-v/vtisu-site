@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    useNavigate,
+} from "react-router-dom";
 import { MainPage } from "./pages/MainPage";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
@@ -22,6 +27,7 @@ import { Page } from "./pages/Page";
 // import { fetchMenuItems } from "./store/slices/menuSlice";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { DefaultPage } from "./pages/_DefaultPage/DefaultPage";
+import { useEffect } from "react";
 
 export const App = () => {
     // const dispatch = useDispatch<AppDispatch>();
@@ -45,7 +51,7 @@ export const App = () => {
                 <Route path="/news/:slug" element={<NewsDetailPage />} />
 
                 <Route path="/about" element={<AboutPage />} />
-                <Route path="/staff" element={<Page />} />
+                {/* <Route path="/staff" element={<GoToTeachers />} /> */}
                 <Route path="/staff/teachers" element={<StaffsPage />} />
                 <Route path="/staff/teachers/*" element={<StaffDetail />} />
 

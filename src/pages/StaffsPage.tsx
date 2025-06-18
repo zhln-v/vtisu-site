@@ -21,6 +21,7 @@ export const StaffsPage = () => {
                     <AnimatedText
                         text="Преподаватели кафедры"
                         textClass="text-4xl sm:text-5xl font-extrabold text-gray-900"
+                        effect="fade"
                     />
                 </h1>
                 <p className="flex justify-center">

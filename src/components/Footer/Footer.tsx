@@ -79,15 +79,6 @@ export const Footer = () => {
                         Следите за нами
                     </h3>
                     <div className="flex gap-4 text-blue-600 text-xl">
-                        <a href="#" aria-label="Facebook">
-                            <FaFacebookF className="hover:text-blue-800" />
-                        </a>
-                        <a href="#" aria-label="Twitter">
-                            <FaTwitter className="hover:text-blue-500" />
-                        </a>
-                        <a href="#" aria-label="Instagram">
-                            <FaInstagram className="hover:text-pink-600" />
-                        </a>
                         <a href="#" aria-label="Telegram">
                             <FaTelegramPlane className="hover:text-blue-500" />
                         </a>

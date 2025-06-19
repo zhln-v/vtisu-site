@@ -49,7 +49,7 @@ export const mockMenu: menuItemType[] = [
     },
     {
         title: "Наука",
-        href: "/science",
+        href: "/science/design-center",
         children: [
             {
                 title: "Научные издания и публикации",

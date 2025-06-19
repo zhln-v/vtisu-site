@@ -45,10 +45,7 @@ export const App = () => {
                 <Route path="/home" element={<MainPage />} />
 
                 <Route path="/home/*" element={<DefaultPage />} />
-                <Route
-                    path="/science/design-center"
-                    element={<DefaultPage />}
-                />
+                <Route path="/science/*" element={<DefaultPage />} />
 
                 <Route path="/news" element={<NewsPage />} />
                 <Route path="/news/:slug" element={<NewsDetailPage />} />

@@ -6,24 +6,24 @@ export const NotFoundPage = () => {
     const navigate = useNavigate();
     const [secondsLeft, setSecondsLeft] = useState(5);
 
-    // useEffect(() => {
-    //     const timer = setInterval(() => {
-    //         setSecondsLeft((s) => s - 1);
-    //     }, 1000);
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setSecondsLeft((s) => s - 1);
+        }, 1000);
 
-    //     const redirect = setTimeout(() => {
-    //         if (window.history.length > 2) {
-    //             window.history.back();
-    //         } else {
-    //             navigate("/");
-    //         }
-    //     }, 5000);
+        const redirect = setTimeout(() => {
+            if (window.history.length > 2) {
+                window.history.back();
+            } else {
+                navigate("/");
+            }
+        }, 5000);
 
-    //     return () => {
-    //         clearInterval(timer);
-    //         clearTimeout(redirect);
-    //     };
-    // }, [navigate]);
+        return () => {
+            clearInterval(timer);
+            clearTimeout(redirect);
+        };
+    }, [navigate]);
 
     return (
         <section className="min-h-screen flex flex-col justify-center items-center bg-white px-4">

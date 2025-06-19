@@ -38,14 +38,18 @@ export const renderInline = (
 
         case "link":
             return (
-                <AnimatedLinkButton
+                <div
                     key={key}
-                    to={el.href}
-                    label={el.text}
-                    icon={<FiArrowRight size={16} />}
-                    variant="outline"
-                    className="ml-2 mt-3 inline-flex w-full"
-                />
+                    className="w-full flex justify-center md:justify-start mt-4"
+                >
+                    <AnimatedLinkButton
+                        to={el.href}
+                        label={el.text}
+                        icon={<FiArrowRight size={16} />}
+                        variant="outline"
+                        className="w-full max-w-xs"
+                    />
+                </div>
             );
 
         case "image":

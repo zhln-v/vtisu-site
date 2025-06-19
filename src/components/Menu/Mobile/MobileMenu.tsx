@@ -94,12 +94,7 @@ export const MobileMenu = ({ isOpen, menuItems, onClose }: Props) => {
                                                         onClick={onClose}
                                                         className="block text-base text-gray-600 hover:text-blue-600 font-medium transition"
                                                     >
-                                                        <AnimatedText
-                                                            text={sub.title}
-                                                            textClass="block text-base text-gray-600 hover:text-blue-600 font-medium transition"
-                                                            effect="fade"
-                                                            as={Tag}
-                                                        />
+                                                        {sub.title}
                                                     </Link>
                                                 </li>
                                             ))}
